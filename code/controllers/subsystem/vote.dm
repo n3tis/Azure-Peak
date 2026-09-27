@@ -10,7 +10,7 @@
 #define STORYTELLER_OVERDUE_MAX_PERCENT 250
 /// Multiplier the winner of a player vote drops to for the next vote, so the same preset needs a clearer lead to
 /// win twice running. It climbs back by STORYTELLER_OVERDUE_STEP_PERCENT per vote like everything else.
-#define STORYTELLER_WIN_COOLDOWN_PERCENT 80
+#define STORYTELLER_WIN_COOLDOWN_PERCENT 70
 #define DEFAULT_VOTE_PANEL_REFRESH_INTERVAL 2 SECONDS
 #define STORYTELLER_VOTE_PANEL_REFRESH_INTERVAL 5 SECONDS
 
