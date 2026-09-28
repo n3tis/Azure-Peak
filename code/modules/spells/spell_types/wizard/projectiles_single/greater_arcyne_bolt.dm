@@ -130,7 +130,7 @@
 	var/list/impact_sounds = list('sound/combat/hits/blunt/shovel_hit.ogg', 'sound/combat/hits/blunt/shovel_hit2.ogg', 'sound/combat/hits/blunt/shovel_hit3.ogg')
 
 /obj/projectile/magic/divine_bolt/arc
-	name = "arced divine_bolt"
+	name = "arced divine bolt"
 	damage = 20
 	arcshot = TRUE
 
