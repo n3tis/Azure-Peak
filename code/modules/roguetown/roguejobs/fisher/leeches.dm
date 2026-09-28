@@ -153,7 +153,7 @@
 			to_chat(user, span_warning("They are deceased. Only running blood may be extracted."))
 			return
 		if(!giving && !M.mind && !mindless_attach)
-			to_chat(user, span_warning("They are mindless. The [src] won't attach."))
+			to_chat(user, span_warning("They are mindless. [src] won't attach."))
 			return
 		var/mob/living/carbon/human/H = M
 		var/obj/item/bodypart/affecting = H.get_bodypart(check_zone(user.zone_selected))
