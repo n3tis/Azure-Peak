@@ -259,10 +259,10 @@
 	color = null
 	consistent = TRUE
 	drainage = 0
-	blood_sucking = 5
+	blood_sucking = 7.5
 	toxin_healing = -2
 	blood_multiplier = 3
-	blood_storage = BLOOD_VOLUME_OKAY
+	blood_storage = BLOOD_VOLUME_NORMAL
 	blood_maximum = BLOOD_VOLUME_MAXIMUM
 	mindless_attach = FALSE
 	embedding = list(
