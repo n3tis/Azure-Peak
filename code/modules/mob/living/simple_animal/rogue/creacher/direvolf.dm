@@ -1,12 +1,15 @@
 
 //see volf.dm for parent animal
 /mob/living/simple_animal/hostile/retaliate/rogue/wolf/dire
+	anatomy_type = /datum/anatomy/quadruped/standard
 	icon = 'icons/roguetown/mob/monster/direvolf.dmi'
 	name = "direvolf"
 	desc = "A large snarling beast of mangy fur and yellowed teeth. Direvolves oft hail from mountaineous areas and are known to attack hapless travelers in the deep forests when prey is scarce."
 	icon_state = "direvolf_brown"
 	icon_living = "direvolf_brown_dead"
 	icon_dead = "direvolf_brown_dead"
+	pixel_x = -8
+	blood_toll_bucket = STATS_KILLED_GREATER_BEASTS
 	botched_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/wolf = 2,//bigger volf, better meat
 						/obj/item/alch/viscera = 1,
 						/obj/item/alch/sinew = 1,
@@ -44,6 +47,19 @@
 	STASTR = 13 //same stats as direbear. It's dire, ser.
 	STASPD = 9
 	remains_type = /obj/effect/decal/remains/direwolf
+
+/mob/living/simple_animal/hostile/retaliate/rogue/wolf/dire/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/ai_aggro_system)
+	gender = MALE
+	if(prob(33))
+		gender = FEMALE
+	update_icon()
+	ai_controller.set_blackboard_key(BB_BASIC_FOODS, food_type)
+	var/color = pick("brown", "black", "white")
+	icon_state = "direvolf_[color]"
+	icon_living = "direvolf_[color]"
+	icon_dead = "direvolf_[color]_dead"
 
 /obj/effect/decal/remains/direwolf
 	name = "remains"
