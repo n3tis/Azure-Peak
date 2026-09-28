@@ -1,11 +1,12 @@
 /mob/living/carbon/human/species/wildshape/direvolf //near 1:1 duplicate of direbear stat-wise
 	name = "Direvolf"
-	race = /datum/species/shapebear
+	race = /datum/species/shapedirewolf
 	footstep_type = FOOTSTEP_MOB_CLAW
 	ambushable = FALSE
-	skin_armor = new /obj/item/clothing/suit/roguetown/armor/skin_armor/direwolf_skin
+	skin_armor = new /obj/item/clothing/suit/roguetown/armor/skin_armor/direvolf_skin
 	wildshape_icon = 'icons/roguetown/mob/monster/direvolf.dmi'
 	wildshape_icon_state = "direvolf_brown"
+	pixel_x = -8
 
 /mob/living/carbon/human/species/wildshape/direvolf/gain_inherent_skills()
 	. = ..()
@@ -67,8 +68,8 @@
 		/datum/language/common,
 	)
 
-/datum/species/shapedirewolf/send_voice(mob/living/carbon/human/human)
-	playsound(get_turf(H), pick('sound/vo/mobs/vw/idle (1).ogg','sound/vo/mobs/vw/idle (2).ogg','sound/vo/mobs/vw/bark (1).ogg','sound/vo/mobs/vw/bark (2).ogg','sound/vo/mobs/vw/idle (3).ogg'), 80, TRUE, -1)bs/direbear/direbear_attack3.ogg'), 80, TRUE, -1)
+/datum/species/shapedirewolf/send_voice(mob/living/carbon/human/H)
+	playsound(get_turf(H), pick('sound/vo/mobs/vw/idle (1).ogg','sound/vo/mobs/vw/idle (2).ogg','sound/vo/mobs/vw/bark (1).ogg','sound/vo/mobs/vw/bark (2).ogg','sound/vo/mobs/vw/idle (3).ogg'), 80, TRUE, -1)
 
 /datum/species/shapedirewolf/regenerate_icons(mob/living/carbon/human/human)
 	human.icon = 'icons/roguetown/mob/monster/direvolf.dmi'
