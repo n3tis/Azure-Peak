@@ -271,7 +271,7 @@
 		"embedded_pain_chance" = 0,
 		"embedded_fall_chance" = 0,
 		"embedded_bloodloss"= 0,
-		"embedded_ignore_throwspeed_threshold" = TRUE,
+		"embedded_ignore_throwspeed_threshold" = FALSE,
 		"embedded_unsafe_removal_pain_multiplier" = 0,
 	) // the humble cheele is gentle. so gentle.
 
