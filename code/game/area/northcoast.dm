@@ -16,7 +16,7 @@
 	ambush_factions = list()
 	ambush_mobs = list(
 		/mob/living/carbon/human/species/hobgoblin/npc/ambush = 4,
-		/datum/npc_warband/huscarl_raiding_party = 4
+		/datum/npc_warband/huscarl_raiding_party = 4,
 		/datum/npc_warband/direvolfcoastpack = 6,
 	)
 	first_time_text = "THE AZURE COAST"
