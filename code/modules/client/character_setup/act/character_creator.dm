@@ -141,5 +141,6 @@ Add a new override in your modular folder that looks like this:
 				return CHARACTER_ACT_DATA_UPDATE
 			verbose_pref_log_change(user, "notice", "Headshot Credit Link", headshot_artist_link, new_artist_link)
 			headshot_artist_link = new_artist_link
+			log_game("[user] has set their Headshot artist link to '[html_encode(headshot_artist_link)]'.")
 			to_chat(user, span_notice("Successfully updated headshot credit link"))
 			return CHARACTER_ACT_DATA_UPDATE

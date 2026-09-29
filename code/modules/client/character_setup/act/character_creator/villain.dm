@@ -50,6 +50,7 @@
 				return CHARACTER_ACT_DATA_UPDATE
 			verbose_pref_log_change(user, "notice", "Lich Headshot Credit Link", lich_headshot_artist_link, new_artist_link)
 			lich_headshot_artist_link = new_artist_link
+			log_game("[user] has set their Lich Headshot artist link to '[html_encode(lich_headshot_artist_link)]'.")
 			to_chat(user, span_notice("Successfully updated lich headshot credit link"))
 			return CHARACTER_ACT_DATA_UPDATE
 
@@ -100,6 +101,7 @@
 				return CHARACTER_ACT_DATA_UPDATE
 			verbose_pref_log_change(user, "notice", "Vampire Headshot Credit Link", vampire_headshot_artist_link, new_artist_link)
 			vampire_headshot_artist_link = new_artist_link
+			log_game("[user] has set their Vampire Headshot artist link to '[html_encode(vampire_headshot_artist_link)]'.")
 			to_chat(user, span_notice("Successfully updated vampire headshot credit link"))
 			return CHARACTER_ACT_DATA_UPDATE
 
