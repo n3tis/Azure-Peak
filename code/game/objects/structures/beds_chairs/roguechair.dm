@@ -11,6 +11,7 @@
 //	pixel_y = 10
 	layer = OBJ_LAYER
 	hidingspot = TRUE
+	density = FALSE // bandaid
 	var/mob/living/hiddenguy = null // So we can find them with fixed eye search
 
 /obj/structure/chair/bench/get_mechanics_examine(mob/user)
