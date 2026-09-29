@@ -60,20 +60,15 @@
 				/datum/reagent/berrypoison,
 				/datum/reagent/blood,
 				/datum/reagent/blood/shitty,
-				)
-			var/list/reagents_to_add = list()
-
-			if(prob(50))
-				var/reagent = pick(waterl)
-				reagents_to_add[reagent] = 100
-			else
-				for(var/reagent in waterl)
-					reagents_to_add[reagent] = 50
+			)
+			var/list/reagents_to_add = list(/datum/reagent/water = 50, pick(waterl) = 50,) // same value as before, but our second reagent is randomized from the list above
 			W.reagents.add_reagent_list(reagents_to_add)
+
 			to_chat(user, "<span class='notice'>I fill [W] from [src]. The water looks vile, am I really going to drink this?</span>")
 			playsound(user, pick('sound/foley/waterwash (1).ogg','sound/foley/waterwash (2).ogg'), 80, FALSE)
 			return
-	else ..()
+	else
+		..()
 
 /obj/structure/well/fountain
 	name = "water fountain"
