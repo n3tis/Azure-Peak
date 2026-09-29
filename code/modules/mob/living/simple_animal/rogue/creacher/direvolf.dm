@@ -67,3 +67,4 @@
 	gender = PLURAL
 	icon_state = "bones"
 	icon = 'icons/roguetown/mob/monster/direvolf.dmi'
+
