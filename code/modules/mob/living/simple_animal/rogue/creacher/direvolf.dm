@@ -11,25 +11,23 @@
 	pixel_x = -8
 	blood_toll_bucket = STATS_KILLED_GREATER_BEASTS
 	botched_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/wolf = 2,//bigger volf, better meat
-						/obj/item/alch/viscera = 1,
+						/obj/item/alch/viscera = 2,
 						/obj/item/alch/sinew = 1,
 						/obj/item/natural/bone = 2)
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/wolf = 2,
-						/obj/item/reagent_containers/food/snacks/rogue/meat = 1, //bigger volf, better meat
-							/obj/item/reagent_containers/food/snacks/fat = 1,
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/wolf = 3, //bigger volf, better meat
+						/obj/item/reagent_containers/food/snacks/fat = 1,
 						/obj/item/natural/hide = 2,
 						/obj/item/alch/sinew = 2,
 						/obj/item/alch/bone = 1,
-						/obj/item/alch/viscera = 2,
+						/obj/item/alch/viscera = 3,
 						/obj/item/natural/fur/wolf = 2,
 						/obj/item/natural/bone = 3)
-	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/wolf = 3,
-						/obj/item/reagent_containers/food/snacks/rogue/meat = 1, //bigger volf, better meat
-							/obj/item/reagent_containers/food/snacks/fat = 2,
-						/obj/item/natural/hide = 2,
+	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/wolf = 4, //bigger volf, better meat
+						/obj/item/reagent_containers/food/snacks/fat = 2,
+						/obj/item/natural/hide = 3,
 						/obj/item/alch/sinew = 2,
-						/obj/item/alch/bone = 1,
-						/obj/item/alch/viscera = 2,
+						/obj/item/alch/bone = 2,
+						/obj/item/alch/viscera = 4,
 						/obj/item/natural/fur/wolf = 3,
 						/obj/item/natural/bone = 4)
 	threat_point = THREAT_DEADLY
