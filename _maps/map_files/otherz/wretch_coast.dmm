@@ -5218,7 +5218,6 @@
 /area/rogue/under/cave/inhumen)
 "vm" = (
 /obj/machinery/light/rogue/candle/blue/l,
-/obj/structure/fluff/psycross/zizocross/stone,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/vampire_manor)
 "vn" = (
@@ -9787,10 +9786,6 @@
 /obj/structure/fluff/railing/border/east,
 /turf/open/transparent/openspace,
 /area/rogue/under/cave/inhumen)
-"On" = (
-/obj/structure/ritualcircle/zizo,
-/turf/open/floor/rogue/cobble,
-/area/rogue/indoors/vampire_manor)
 "Oo" = (
 /obj/structure/fluff/railing/border/east,
 /turf/open/transparent/openspace,
@@ -27899,7 +27894,7 @@ dz
 ks
 KS
 lL
-On
+ax
 so
 mZ
 ks
