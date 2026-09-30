@@ -568,6 +568,12 @@
 	seed = /obj/item/herbseed/fyritius //you are an herb now
 	desc = "A delicate orange flower that radiates warmth."
 	icon_state = "fyritius"
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/head_items.dmi'
+	slot_flags = ITEM_SLOT_HEAD|ITEM_SLOT_MASK
+	body_parts_covered = NONE
+	spitoutmouth = FALSE
+	muteinmouth = FALSE
+	alternate_worn_layer	= 8.9 //On top of helmet
 	filling_color = "#ff5e00"
 	tastes = list("tastes like a burning coal and fire" = 1)
 	obj_flags = CAN_BE_HIT
@@ -639,6 +645,12 @@
 	name = "bloodied fyritius flower"
 	desc = "A once delicate orange flower, now soaked with gruesome accursed blood that slowly burns it away."
 	icon_state = "fyritius_blood"
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/head_items.dmi'
+	slot_flags = ITEM_SLOT_HEAD|ITEM_SLOT_MASK
+	body_parts_covered = NONE
+	spitoutmouth = FALSE
+	muteinmouth = FALSE
+	alternate_worn_layer	= 8.9 //On top of helmet
 	filling_color = "#ff3300"
 	tastes = list("tastes like a burning coal and fire and blood" = 1)
 	bitesize = 1
