@@ -249,6 +249,6 @@
 	name = "fyritius flowers"
 	desc = "A cluster of dangerously flammable flowers. Their hazardous qualities make them useful \
 	alchemical reagents for burning away rot, decay, and diseases. Mundane, magickal, or divine."
-	icon_state = "fyritius2"
+	icon_state = "fyritius"
 
 	herbtype = /obj/item/reagent_containers/food/snacks/grown/rogue/fyritius
