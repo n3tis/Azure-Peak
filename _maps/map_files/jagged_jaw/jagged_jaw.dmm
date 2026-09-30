@@ -40817,6 +40817,7 @@
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/under/cave/grimspyre/depths)
 "eVJ" = (
+/obj/structure/flora/roguetree/wise,
 /turf/open/floor/rogue/grassyel,
 /area/rogue/outdoors/exposed/church/grim)
 "eVM" = (
@@ -81304,7 +81305,7 @@
 /obj/structure/mineral_door/wood/donjon{
 	locked = 1;
 	name = "lockup";
-	lockid = "hamguards";
+	lockid = "hamguardsevidence";
 	dir = 8
 	},
 /obj/structure/trap/shock,
@@ -86941,7 +86942,7 @@
 	pixel_y = 12;
 	pixel_x = 6
 	},
-/obj/item/reagent_containers/glass/bucket/pot/kettle,
+/obj/item/reagent_containers/glass/bucket/pot,
 /obj/machinery/light/rogue/candle/l,
 /obj/structure/fluff/railing/border{
 	dir = 6
@@ -89485,7 +89486,7 @@
 /area/rogue/indoors/shelter)
 "kSX" = (
 /obj/structure/closet/crate/chest/crate,
-/obj/item/roguecoin/gold,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cave/grim/hamlet)
 "kSY" = (
@@ -96582,10 +96583,6 @@
 /obj/structure/bed/rogue/shit,
 /turf/open/floor/rogue/twig,
 /area/rogue/under/cave/orcdungeon)
-"lLX" = (
-/obj/structure/roguewindow,
-/turf/open/floor/rogue/concrete,
-/area/rogue/outdoors/town/grim)
 "lLZ" = (
 /obj/machinery/light/rogue/firebowl/church,
 /turf/open/floor/rogue/churchmarble,
@@ -100670,6 +100667,16 @@
 	},
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/under/cave/licharena/bossroom/grim)
+"mmS" = (
+/obj/effect/decal/edge{
+	color = "#3f3f3f"
+	},
+/obj/structure/rack/rogue{
+	density = 0;
+	pixel_y = 18
+	},
+/turf/open/floor/rogue/tile/brownbrick/browner,
+/area/rogue/indoors/town/dwarfin)
 "mmT" = (
 /obj/effect/decal/edge{
 	color = "#3f3f3f";
@@ -115099,7 +115106,7 @@
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/grim)
 "ocs" = (
-/obj/structure/mineral_door/wood/towner/cheesemaker,
+/obj/structure/mineral_door/wood/towner/potter,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/grim)
 "ocx" = (
@@ -129242,7 +129249,7 @@
 /obj/structure/mineral_door/wood/donjon{
 	locked = 1;
 	name = "lockup";
-	lockid = "hamguards";
+	lockid = "hamguardsevidence";
 	dir = 1
 	},
 /obj/structure/trap/shock,
@@ -130489,6 +130496,12 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cavewet/bogcaves/west)
+"pSX" = (
+/obj/machinery/light/rogue/candle,
+/obj/structure/closet/crate/roguecloset,
+/obj/item/reagent_containers/glass/bucket/pot,
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town/grim)
 "pSZ" = (
 /obj/structure/roguewindow/openclose/reinforced,
 /turf/open/floor/rogue/concrete,
@@ -151347,6 +151360,17 @@
 "suP" = (
 /turf/closed/wall/mineral/rogue/pipe/line,
 /area/rogue/under/cave/dungeon1/gethsmane/inner)
+"suQ" = (
+/obj/effect/decal/edge{
+	color = "#3f3f3f";
+	dir = 6
+	},
+/obj/structure/rack/rogue{
+	density = 0;
+	pixel_y = 18
+	},
+/turf/open/floor/rogue/tile/brownbrick/browner,
+/area/rogue/indoors/town/dwarfin)
 "suR" = (
 /obj/item/clothing/under/roguetown/loincloth,
 /obj/item/clothing/under/roguetown/loincloth,
@@ -161751,10 +161775,6 @@
 /obj/item/millstone{
 	pixel_y = 14;
 	pixel_x = 4
-	},
-/obj/item/reagent_containers/glass/bucket/pot/kettle{
-	pixel_x = -9;
-	pixel_y = 0
 	},
 /obj/item/kitchen/rollingpin,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -502562,12 +502582,12 @@ dfx
 mGC
 sqX
 sqX
-oqW
-jLZ
-lLX
-lLX
-jLZ
-oqW
+mDI
+aTh
+bcH
+bcH
+aTh
+mDI
 jKu
 owl
 gRB
@@ -504093,7 +504113,7 @@ eYt
 aTh
 eno
 hZU
-fIg
+vhP
 hZU
 nuD
 jKu
@@ -509398,7 +509418,7 @@ rBt
 iTP
 ldg
 umu
-lOu
+mmS
 btz
 reh
 ldg
@@ -512836,7 +512856,7 @@ kFT
 kFT
 etB
 ldg
-sRd
+suQ
 pqw
 iwI
 aZE
@@ -514801,7 +514821,7 @@ mJp
 gRB
 gRB
 gRB
-bcH
+obO
 pFk
 pFk
 wKz
@@ -515566,7 +515586,7 @@ mDI
 eyh
 dfx
 aTh
-aGo
+pSX
 nuD
 geS
 nuD
@@ -515948,7 +515968,7 @@ eyT
 gRB
 gRB
 mDI
-obO
+bcH
 nuD
 nuD
 nuD
