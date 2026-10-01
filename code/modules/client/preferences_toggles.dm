@@ -183,7 +183,7 @@
 
 /client/verb/toggle_lobby_music()
 	set name = "Toggle Lobby Music"
-	set category = "Preferences.Options"
+	set category = "Preferences.Audio"
 	set desc = ""
 	if(prefs)
 		prefs.toggles ^= SOUND_LOBBY
@@ -198,13 +198,13 @@
 
 /client/verb/stop_sounds_rogue()
 	set name = "StopSounds"
-	set category = "Preferences.Options"
+	set category = "Preferences.Audio"
 	set desc = ""
 	if(mob)
 		SEND_SOUND(mob, sound(null))
 
 /client/verb/toggle_area_music()
-	set category = "Preferences.Options"
+	set category = "Preferences.Audio"
 	set name = "Toggle Area Music"
 	if(prefs)
 		prefs.stopdroning = !prefs.stopdroning
