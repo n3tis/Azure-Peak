@@ -59,7 +59,7 @@
 			to_chat(src, "Your character information will no longer be viewable when masked.")
 
 /client/verb/toggle_instruments()
-	set category = "Preferences.Options"
+	set category = "Preferences.Audio"
 	set name = "Toggle Instrument Sounds"
 	if(prefs)
 		prefs.toggles ^= SOUND_INSTRUMENTS
@@ -75,7 +75,7 @@
 	to_chat(src, "You will[prefs.toggles & SOUND_MIDI ? "" : " no longer"] hear admin-played sounds.")
 
 /client/verb/mute_animal_emotes()
-	set category = "Preferences.Options"
+	set category = "Preferences.Audio"
 	set name = "Toggle Animal Noise Emotes"
 	if(prefs)
 		prefs.mute_animal_emotes = !prefs.mute_animal_emotes
@@ -274,7 +274,7 @@
 
 /client/verb/vocal_barks()
 	set name = "Toggle Vocal Barks"
-	set category = "Preferences.Options"
+	set category = "Preferences.Audio"
 	set desc = ""
 	if(prefs)
 		prefs.mute_barks = !prefs.mute_barks
