@@ -418,27 +418,6 @@
 
 /datum/action/cooldown/spell/matthios/transact
 	name = "Transact"
-	desc = "Sacrifice an item in your hand, applying a heal over time to yourself with strenght depending on its value."
-	button_icon_state = "transact"
-	sound = 'sound/effects/hood_ignite.ogg'
-
-	click_to_activate = TRUE
-	cast_range = SPELL_RANGE_ADJACENT
-
-	primary_resource_cost = SPELLCOST_MIRACLE_MAJOR
-
-	secondary_resource_cost = SPELLCOST_MIRACLE
-
-	invocation_type = INVOCATION_SHOUT
-	invocations = list("Transaction for a lyfe!")
-
-	charge_required = FALSE
-	cooldown_time = 45 SECONDS
-
-	spell_requirements = SPELL_REQUIRES_HUMAN | SPELL_REQUIRES_SAME_Z
-
-/datum/action/cooldown/spell/matthios/transact
-	name = "Transact"
 	desc = "Convert the value of an item in your hand into healing over time, leaving the item worthless and ruining its quality."
 	fluff_desc = "To Matthios, value is never truly lost, only exchanged. The faithful learn to see beyond the material form of their possessions, drawing forth their worth and bargaining it into vitality. What remains may be worthless, but the wealth within it has found a finer purpose."
 	button_icon_state = "transact"
@@ -463,6 +442,9 @@
 	var/obj/item/held_item = owner.get_active_held_item()
 	if(!held_item)
 		to_chat(owner, span_info("I need something of value to make a transaction..."))
+		return FALSE
+	if(istype(held_item, /obj/item/roguecoin))
+		to_chat(owner, span_info("Coins are already in a form of value. Your greed disgusts me."))
 		return FALSE
 	if(held_item.GetComponent(/datum/component/holster))
 		var/datum/component/holster/SC = held_item.GetComponent(/datum/component/holster)
