@@ -269,7 +269,7 @@
 #define TRAIT_VAMPIRE_SPAWN_PROTECTION "Vampire Spawn Protection"
 
 // POWERFUL TRAITS WE SHOULD NOT GIVE OUT EASILY
-#define TRAIT_INFINITE_STAMINA "Indefatigable" //for ai/antag bosses/simplemobs. Disables the stamina system completely.
+#define TRAIT_INFINITE_STAMINA "Boundless Stamina" //for ai/antag bosses/simplemobs. Disables the stamina system completely.
 #define TRAIT_HALLOWED "Hallowed" //No need of psicross req for miracles.
 #define TRAIT_SHOCKIMMUNE "Shock Immunity"
 #define TRAIT_INFINITE_ENERGY "Boundless Energy" //infinite fatigue (blue bar) but not infinite stamina
@@ -535,7 +535,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_LASTLEGS = span_danger("My lux is worn. I am not truly unrevivable, not yet; but the next shall be my last."),
 	TRAIT_CLAIMED_BY_DARKSTAR = span_danger("My soul has been trapped inside an assassin's dagger. I will not be able to return to lyfe until the dagger is destroyed..."),
 	TRAIT_MANIAC_AWOKEN = span_danger("I am <b>WAKING UP</b> and the sheeple know this. They will resist."),
-	TRAIT_INFINITE_STAMINA = "I have boundless energy, I will never tire.",
+	TRAIT_INFINITE_STAMINA = "I have boundless stamina, I will never tire.",
 	TRAIT_NUDIST = "I <b>refuse</b> to wear clothes. They are a hindrance to my freedom.",
 	TRAIT_CYCLOPS_LEFT = span_warning("My left eye has been poked out..."),
 	TRAIT_CYCLOPS_RIGHT = span_warning("My right eye has been poked out..."),
