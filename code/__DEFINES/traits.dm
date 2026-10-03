@@ -174,7 +174,7 @@
 
 // ROGUEspecialTRAITS (description when rmb skills button)
 #define TRAIT_CIVILIZEDBARBARIAN "Expert Pugilist"
-#define TRAIT_COMICSANS "Annoying Face"
+#define TRAIT_COMICSANS "Annoying Voice"
 #define TRAIT_WATERBREATHING "Water Breathing"
 
 // TENNITE PATRON GOD TRAITS
@@ -833,16 +833,12 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_EMOTEMUTE			"emotemute"
 #define TRAIT_DEAF				"deaf"
 #define TRAIT_NEARSIGHT			"nearsighted"
-#define TRAIT_FAT				"fat"
 #define TRAIT_HUSK				"husk"
-#define TRAIT_BADDNA			"baddna"
 #define TRAIT_CLUMSY			"clumsy"
 #define TRAIT_CHUNKYFINGERS		"chunkyfingers" //means that you can't use weapons with normal trigger guards.
 #define TRAIT_GNARLYDIGITS		"gnarlydigits" //less aggressive version of chunky fingers to allow -some- fun.
 #define TRAIT_TINYPAWS			"tinypaws" // even less aggressive version of chunky fingers to allow familiars to perform repairs.
 #define TRAIT_WEAPONLESS		"weaponless" // reskinned variant of the above.
-#define TRAIT_DUMB				"dumb"
-#define TRAIT_MONKEYLIKE		"monkeylike" //sets IsAdvancedToolUser to FALSE
 #define TRAIT_NOTIGHTGRABMESSAGE "notightgrabmessage" // Hides grab tightening messages.
 #define TRAIT_NOSSDINDICATOR "nossdindicator" // Hides the SSD indicator. Used with scrying.
 #define TRAIT_NOSTRUGGLE "nostruggle" // Instant grabs on someone else.
@@ -868,15 +864,10 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_RESISTHEAT		"resist_heat"
 #define TRAIT_RESISTHEATHANDS	"resist_heat_handsonly" //For when you want to be able to touch hot things, but still want fire to be an issue.
 #define TRAIT_RESISTCOLD		"resist_cold"
-#define TRAIT_RESISTHIGHPRESSURE	"resist_high_pressure"
-#define TRAIT_RESISTLOWPRESSURE	"resist_low_pressure"
-#define TRAIT_RADIMMUNE			"rad_immunity"
-#define TRAIT_VIRUSIMMUNE		"virus_immunity"
 #define TRAIT_PIERCEIMMUNE		"Pierce Immunity"
 #define TRAIT_NODISMEMBER		"Dismember Immunity"
 #define TRAIT_NOFIRE			"nonflammable" // Full fire immunity - reserve for monsters/NPCs only, do not grant to players
 #define TRAIT_FIRE_RESIST		"fire_resistance" // 50% fire damage/heating reduction + 2x stack decay - use this for player-accessible fire resistance
-#define TRAIT_NOGUNS			"no_guns"
 #define TRAIT_NOMETABOLISM		"no_metabolism"
 #define TRAIT_LIMBATTACHMENT	"limb_attach"
 #define TRAIT_NOLIMBDISABLE		"no_limb_disable"
@@ -884,8 +875,6 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_TOXINLOVER		"toxinlover"
 #define TRAIT_HOLDBREATH		"hold_breath"
 #define TRAIT_HOLY				"holy"
-#define TRAIT_DEPRESSION		"depression"
-#define TRAIT_JOLLY				"jolly"
 #define TRAIT_NOCRITDAMAGE		"no_crit"
 #define TRAIT_NOSLIPWATER		"noslip_water"
 #define TRAIT_NOSLIPALL			"noslip_all"
