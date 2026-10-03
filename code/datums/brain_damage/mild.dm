@@ -163,24 +163,6 @@
 	owner.remove_status_effect(STATUS_EFFECT_SPASMS)
 	..()
 
-/datum/brain_trauma/mild/nervous_cough
-	name = "Nervous Cough"
-	desc = ""
-	scan_desc = ""
-	gain_text = span_warning("My throat itches incessantly...")
-	lose_text = span_notice("My throat stops itching.")
-
-/datum/brain_trauma/mild/nervous_cough/on_life()
-	if(prob(12) && !HAS_TRAIT(owner, TRAIT_SOOTHED_THROAT))
-		if(prob(5))
-			to_chat(owner, "<span notice='warning'>[pick("You have a coughing fit!", "You can't stop coughing!")]</span>")
-			owner.Immobilize(20)
-			owner.emote("cough")
-			addtimer(CALLBACK(owner, TYPE_PROC_REF(/mob, emote), "cough"), 6)
-			addtimer(CALLBACK(owner, TYPE_PROC_REF(/mob, emote), "cough"), 12)
-		owner.emote("cough")
-	..()
-
 /datum/brain_trauma/mild/expressive_aphasia
 	name = "Expressive Aphasia"
 	desc = ""
