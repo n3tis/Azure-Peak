@@ -1140,6 +1140,7 @@
 	SEND_SIGNAL(invoker, COMSIG_MOB_PRE_INVOCATION, src, invocation_list)
 	var/used_invocation_message = invocation_list[INVOCATION_MESSAGE]
 	var/used_invocation_type = invocation_list[INVOCATION_TYPE]
+	var/used_invocation_self_message = invocation_self_message[INVOCATION_MESSAGE]
 
 	switch(used_invocation_type)
 		if(INVOCATION_SHOUT)
@@ -1149,9 +1150,11 @@
 			invoker.whisper(used_invocation_message, forced = "spell ([src])", language = /datum/language/common)
 
 		if(INVOCATION_EMOTE)
+			if(!used_invocation_self_message)
+				used_invocation_self_message = used_invocation_message
 			invoker.visible_message(
-				capitalize(replacetext(used_invocation_message, "%CASTER", invoker.name)),
-				capitalize(replacetext(invocation_self_message, "%CASTER", invoker.name)),
+				span_danger(capitalize(replacetext(used_invocation_message, "%CASTER", invoker.name))),
+				span_danger(capitalize(replacetext(used_invocation_self_message, "%CASTER", invoker.name))),
 			)
 
 /// When we start charging the spell called from set_click_ability or start_casting
