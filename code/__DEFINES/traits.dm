@@ -909,18 +909,9 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_LAW_ENFORCEMENT_METABOLISM "law-enforcement-metabolism"
 #define TRAIT_ALWAYS_CLEAN		"always-clean"
 #define TRAIT_BOOZE_SLIDER		"booze-slider"
-#define TRAIT_QUICK_CARRY		"quick-carry"
-#define TRAIT_QUICKER_CARRY		"quicker-carry"
 #define TRAIT_UNINTELLIGIBLE_SPEECH "unintelligible-speech"
 #define TRAIT_LANGUAGE_BARRIER	"language-barrier"
-#define TRAIT_UNSTABLE			"unstable"
-#define TRAIT_OIL_FRIED			"oil_fried"
-#define TRAIT_MEDICAL_HUD		"med_hud"
-#define TRAIT_SECURITY_HUD		"sec_hud"
-#define TRAIT_MEDIBOTCOMINGTHROUGH "medbot" //Is a medbot healing you
 #define TRAIT_PASSTABLE			"passtable"
-#define TRAIT_NOFLASH			"noflash" //Makes you immune to flashes
-#define TRAIT_XENO_IMMUNE		"xeno_immune"//prevents xeno huggies implanting skeletons
 #define TRAIT_DRUQK				"druqk"
 #define TRAIT_BURIED_COIN_GIVEN "buried_coin_given" // prevents a human corpse from being used for a corpse multiple times
 #define TRAIT_BLOODLOSS_IMMUNE "bloodloss_immune" // can bleed, but will never die from blood loss
@@ -943,7 +934,6 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 //item traits
 #define TRAIT_NODROP			"nodrop"
 #define TRAIT_NOEMBED			"noembed"
-#define TRAIT_T_RAY_VISIBLE		"t-ray-visible" // Visible on t-ray scanners if the atom/var/level == 1
 #define TRAIT_NO_TELEPORT		"no-teleport" //you just can't
 
 //quirk traits
