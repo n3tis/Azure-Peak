@@ -517,7 +517,7 @@ const SubtabIdentityCardBark = () => {
               {constantData ? (
                 <Dropdown
                   fluid
-                  options={constantData.barksounds.toSorted()}
+                  options={[...constantData.barksounds].sort()}
                   selected={bark_name}
                   onSelected={(bs) =>
                     act('set_barksound', {
