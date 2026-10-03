@@ -34,30 +34,6 @@
 	owner.stuttering = 0
 	..()
 
-/datum/brain_trauma/mild/dumbness
-	name = "Dumbness"
-	desc = ""
-	scan_desc = ""
-	gain_text = span_warning("I feel dumber.")
-	lose_text = span_notice("I feel smart again.")
-
-/datum/brain_trauma/mild/dumbness/on_gain()
-	ADD_TRAIT(owner, TRAIT_DUMB, TRAUMA_TRAIT)
-	..()
-
-/datum/brain_trauma/mild/dumbness/on_life()
-	owner.derpspeech = min(owner.derpspeech + 5, 25)
-	if(prob(3))
-		owner.emote("drool")
-	else if(owner.stat == CONSCIOUS && prob(3))
-		owner.say(pick_list_replacements(BRAIN_DAMAGE_FILE, "brain_damage"), forced = "brain damage")
-	..()
-
-/datum/brain_trauma/mild/dumbness/on_lose()
-	REMOVE_TRAIT(owner, TRAIT_DUMB, TRAUMA_TRAIT)
-	owner.derpspeech = 0
-	..()
-
 /datum/brain_trauma/mild/speech_impediment
 	name = "Speech Impediment"
 	desc = ""
